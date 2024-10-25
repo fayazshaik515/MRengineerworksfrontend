@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.about-page {
+    background-color: #111;
+    color: #fff;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.about-wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    justify-content: space-between; 
+    flex-direction: row; 
+    align-items: flex-start;
+
+}
+
+.about-content {
+    max-width: 25%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 20px;
+    
+}
+
+.about-image img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0;
+}
+
+.experience-box {
+    background-color: #ff6f61;
+    padding: 20px;
+    color: #111;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-bottom: 0;
+    align-self: flex-start; 
+}
+
+.experience-box h2 {
+    font-size: 50px;
+    color: black;
+}
+
+.experience-box h1 {
+    font-size: 25px;
+    color: black;
+
+
+}
+
+.experience-box p {
+    font-size: 17px;
+    color: white;
+    margin: 11px 0;
+    max-width: 250px;
+}
+
+.about-title {
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+.main-heading {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.Why-Us {
+    font-size: 40px;
+}
+
+.about-content p {
+    font-size: 15px;
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+}
+
+
+.features h1 {
+    font-size: 40px;
+}
+
+.about-title:hover,
+.main-heading:hover,
+.Why-Us:hover {
+    color: #ff6f61;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .about-content {
+        max-width: 100%; 
+        text-align: center; 
+    }
+
+    .experience-box {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
